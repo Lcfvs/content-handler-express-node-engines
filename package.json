@@ -1,0 +1,28 @@
+{
+  "name": "content-handler-express-node-engines",
+  "version": "1.0.0",
+  "description": "Some content-handler-express rendering engines for expressjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lcfvs/content-handler-express-node-engines.git"
+  },
+  "keywords": [
+    "emulate",
+    "expressjs",
+    "browser",
+    "content-handler"
+  ],
+  "author": "lcf.vs <michael.rouges@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lcfvs/content-handler-express-node-engines/issues"
+  },
+  "homepage": "https://github.com/Lcfvs/content-handler-express-node-engines#readme",
+  "dependencies": {
+    "content-handler-express": "^1.3.0",
+    "htmlize": "^1.0.0"
+  }
+}
