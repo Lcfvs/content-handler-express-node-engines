@@ -1,5 +1,5 @@
 import { promises } from 'fs'
-import htmlize from 'htmlize'
+import jsdom from 'jsdom'
 import ContentEngine from 'content-handler-express/content-engine.js'
 
 function clone (fragment) {
@@ -15,11 +15,10 @@ export default function html (app) {
   const engine = new ContentEngine(app, load)
 
   return name => engine.render(name, clone, data => {
-    const document = htmlize(data)
-    const fragment = document.createDocumentFragment()
-    const body = document.createElement('body')
+    const fragment = jsdom.JSDOM.fragment('')
+    const body = fragment.ownerDocument.createElement('body')
 
-    body.appendChild(document.documentElement)
+    body.innerHTML = data
     fragment.appendChild(body)
 
     return fragment

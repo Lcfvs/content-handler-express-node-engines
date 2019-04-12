@@ -1,6 +1,6 @@
 {
   "name": "content-handler-express-node-engines",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Some content-handler-express rendering engines for expressjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,6 +23,6 @@
   "homepage": "https://github.com/Lcfvs/content-handler-express-node-engines#readme",
   "dependencies": {
     "content-handler-express": "^1.4.0",
-    "htmlize": "^1.0.0"
+    "jsdom": "^14.0.0"
   }
 }
